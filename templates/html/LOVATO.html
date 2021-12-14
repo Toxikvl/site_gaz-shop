@@ -1,0 +1,84 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'markshbo' %}">Марки ГБО</a></li>
+            <li class="breadcrumb-item active">Digitronic</li>
+
+        </ol>
+    </nav>
+    <div class="table-flex">
+        <div class="table-flex-item-left">
+        <div class="table-left-item">
+            <h4 class="description">
+                ПОЧЕМУ LOVATO
+            </h4>
+            <p>
+                1. <b>Самый большой опыт в России.</b> Lovato — первое итальянское ГБО, массово появившееся более 20 лет назад на
+                Российском рынке. За эти годы компания Lovato прекрасно адаптировала автомобильное газовое оборудование к суровым
+                Российским условиям, что доказано абсолютным лидерством по числу установок ГБО 2 и 4 поколения в России.<br>
+                2.<b>Цена.</b> ГБО Ловато – это брендовый продукт, впитавший в себя 60-летний опыт и знания лучших итальянских специалистов
+                в области газового оборудования для автомобилей. Вся продукция обязательно проходит многоуровневый контроль качества на
+                производстве, и все системы успешно сертифицированы по Техническому регламенту Таможенного Союза. Конечно, продукция Lovato
+                не является самой дешевой на рынке, но, приобретая оборудование Ловато, Вы можете быть уверены, что платите за лучшее соотношение
+                «Цена – Надежность — Экономичность».<br>
+                3.<b>Самая большая сервисная сеть.</b> Установка ГБО Lovato и его сервисное обслуживание осуществляется во
+                всех регионах России. Купить нужную оригинальную запасную часть — тоже не проблема.<br>
+                4.<b>Гарантия.</b> Вся продукция Ловато специально адаптирована для Российских условий, и мы уверены в его надежной
+                и долгой работе. Даже если что-то произойдет, Вы сможете получить гарантийное обслуживание в сервисе, установившем Вам
+                газобаллонное оборудование или в любом ближайшем сервисе LovatoGasPoint, а также обратиться непосредственно к нам.<br>
+                5. <b>Электроника от АЕВ.</b> Все комплекты ГБО Lovato 4 поколения и выше базируются на электронных блоках управления
+                мирового лидера газовой электроники – итальянской компании AEB. Сотрудничество с AEB позволяет Lovato быть лидером рынка
+                и предлагать своим клиентам самые передовые решения, отвечающие вызовам современного автомобилестроения.
+                Именно в контроллерах Ловато впервые появились функции «плавного» управления топливом, позволяющие, например,
+                реализовать смену топлива с бензина на газ и обратно абсолютно незаметно не только для водителя, но и для автомобиля.<br><br>
+                Владелец абсолютно любого автомобиля, начиная от карбюраторной классики (комплекты ГБО Ловато 2 поколения),
+                продолжая современными автомобилями с распределенным впрыском топлива (комплекты ГБО Ловато 4 поколения), и
+                завершая суперсовременными автомобилями с непосредственным впрыском топлива (комплекты ГБО Lovato DI — прямой впрыск)
+                найдет подходящую ля своего автомобильную газовую систему Lovato. Только компания Ловато имеет в своем ассортименте
+                комплекты для автомобилей с 10 цилиндрами. Любой партнер сети LovatoGasPoint с удовольствием поможет Вам с
+                выбором подходящего газового оборудования.
+            </p>
+        </div>
+        </div>
+        <div class="table-flex-item-right">
+            <h4 style="color: #2d5c88;margin-bottom: 15px">
+                    Записи в блоге
+            </h4>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/чистаяэкономия94x70.jpg" %}" alt="" style="float: left; margin-right: 10px">
+                <a href="#">Программа «Чистая Экономия»</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/HBOpayback.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Окупаемость ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/GBOdocuments.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Документы на ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/Газовая-установка-на-дизель-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Газовая установка на дизель</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/ГБО-пропан-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">ГБО метан</a>
+            </div>
+            <div class="recording">
+                <h5>Возникли вопросы? Спрашивайте!</h5>
+                <p style="font-size: 12px">Наши специалисты свяжутся с Вами и помогут.</p>
+                <form action="#" class="recording-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Ваше имя" class="d-block" style="margin-bottom: 10px">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="d-block">
+                    <button type="submit" class="btn btn-primary btn-lg" class="d-block">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

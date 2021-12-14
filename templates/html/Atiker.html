@@ -1,0 +1,89 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'markshbo' %}">Марки ГБО</a></li>
+            <li class="breadcrumb-item active">Atiker</li>
+
+        </ol>
+    </nav>
+    <div class="table-flex">
+        <div class="table-flex-item-left">
+        <div class="table-left-item">
+            <h4 class="description">
+                Atiker газоболонное оборудование
+            </h4>
+            <p>
+                <b>Atiker Metai Inc.</b> была создана Мехметом Али Атикером в 1970 году,
+                и занималась производством стальных труб, используемых в установке
+                глубоководных скважин. В результате технологических изменений и требования рынка,
+                компания <b>Atiker Metal Inc.</b> поменяла вектор развития и перешла от производства
+                стальных труб до разработки автомобильных цистерн, а затем производства сжиженного
+                газа и автозаправочных систем. Atiker Metal Inc. является членом группы компаний
+                Atiker, обладают широким спектром предоставляемых услуг и производимых товаров,
+                занимаются как внешней торговлей и производством автогазозаправочных систем LPG/CNG,
+                так и производством текстиля, электроники и обуви.<br><br>
+                <b>Atiker Metal Inc.</b> производит автомобильные LPG балоны и системы
+                LPG/CNG топлива в производственных предприятиях, расположенных в
+                городе Конья, Турция. Закрытая площадь производственных помещений
+                составляет около 55 000 квадратных метров. <b>Atiker Metal Inc.</b> экспортирует
+                около 60% продукции в более чем 40 стран на 5 континентах.<br><br>
+                Используя передовые технологии, на протяжении многих лет,
+                компания уверенно занимает лидирующие позиции в своем профессиональном секторе.<br><br>
+                Сертификаты качества, полученные компанией <b>Atiker Metal Inc.</b> для газовых балоннов <b>Atiker</b>,
+                отвечают всем правилам качества, безопасности и признаны многими странами по всему миру, где представлена продукция бренда.<br><br>
+                Для того, чтобы удовлетворить все требования и ожидания клиентов, быть впереди своих конкурентов, <b>Atiker Metal Inc.</b>
+                отдает высокий приоритет инновационной деятельности, научно-исследовательской и опытно-конструкторским работам.
+                Сотрудники данного подразделения, наладили полноценное сотрудничество с научными сотрудниками Сельчукского
+                Технологического университета в области разработки передовых технологий и поддержания высокого качества продукции.
+                В результате научно-исследовательских и опытно-конструкторских работ, <b>Atiker Metal Inc.</b> постоянно повышает разнообразие
+                ассортимента продукции, качества и производительности существующих продуктов, кроме того, это позволяет значительно снижать
+                производственные затраты и отходы в соответствии с требованиями рынка и технологическими достижениями. Специалисты компании
+                постоянно совершенствуют и обновляют продуктовую линейку и повышают надежность каждой детали за счет проведенных анализов по
+                предотвращения возможных сбоев.<br><br>
+                Помимо проектов в области развития новых продуктов и технологий, <b>Atiker Metal Inc.</b>
+                инициировала многочисленные проекты социальной ответственности с учетом своих обязанностей
+                по отношению к клиентам и человечеству.
+            </p>
+        </div>
+        </div>
+        <div class="table-flex-item-right">
+            <h4 style="color: #2d5c88;margin-bottom: 15px">
+                    Записи в блоге
+            </h4>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/чистаяэкономия94x70.jpg" %}" alt="" style="float: left; margin-right: 10px">
+                <a href="/blog/1">Программа «Чистая Экономия»</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/HBOpayback.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="/blog/2">Окупаемость ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/GBOdocuments.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Документы на ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/Газовая-установка-на-дизель-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Газовая установка на дизель</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/ГБО-пропан-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">ГБО метан</a>
+            </div>
+            <div class="recording">
+                <h5>Возникли вопросы? Спрашивайте!</h5>
+                <p style="font-size: 12px">Наши специалисты свяжутся с Вами и помогут.</p>
+                <form action="#" class="recording-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Ваше имя" class="d-block" style="margin-bottom: 10px">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="d-block">
+                    <button type="submit" class="btn btn-primary btn-lg" class="d-block">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

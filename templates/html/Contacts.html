@@ -1,0 +1,54 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+         <div class="container">
+        <nav class="main-navigation">
+            <a class="main-navigation-logo" href="{% url 'main' %}"><img src="{% static "images/Mainlogo.png" %}" alt="main-logo"></a>
+            <ul>
+                 <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'main' %}">Главная</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="#">Магазин</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'markshbo' %}">Марки ГБО</a>
+                </li >
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'togbo' %}">ТО ГБО</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'warranty' %}">Гарантии</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'blog' %}">Вопросы о ГБО</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'aboutus' %}">О нас</a>
+                </li >
+                <li class="main-navigation-list main-navigation-list-a" style="color:#557a8a">
+                    Контакты
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+        </ol>
+    </nav>
+    <section class="contacts">
+        <p>
+            Адрес:<b> г. Владикавказ,ул. Владивостокская,16</b><br><br>
+            Время работы: 09:00-18:00,<br>
+            выходной: воскресенье<br><br>
+            Телефоны: <a href="tel:+79188297878">8(918)829-78-78</a>, <a href="tel:+79188369090">8(918)836-90-90</a><br><br>
+            E-mail: <a href="mailto:avtogazkomplekt@mail.ru">avtogazkomplekt@mail.ru</a>
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.0894510036983!2d44.62061630473148!3d43.06058619413051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40507561b3665fd5%3A0xe76e4a192eb40892!2z0KbQtdC90YLRgCDQk9Cw0Lcg0JLQu9Cw0LTQuNC60LDQstC60LDQtw!5e0!3m2!1sru!2sru!4v1612865249399!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+</div>
+{% endblock %}

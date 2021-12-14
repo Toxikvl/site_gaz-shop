@@ -1,0 +1,20 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item "><a href="{% url 'blog' %}">Блог</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ object.title}}</li>
+        </ol>
+    </nav>
+ </div>
+<div class="container" style="min-height: 60vh">
+<h1>{{ object.title }}</h1>
+<p>
+    {{ object.description }}
+</p>
+</div>
+{% endblock %}

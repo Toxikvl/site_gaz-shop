@@ -1,0 +1,9 @@
+.foc {
+	width: 250px;
+	cursor:pointer;
+	display:inline;
+	}
+	.foc:focus {
+	width: 1000px;
+	z-index: 100;
+	}

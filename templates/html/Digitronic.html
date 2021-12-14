@@ -1,0 +1,75 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'markshbo' %}">Марки ГБО</a></li>
+            <li class="breadcrumb-item active">Digitronic</li>
+
+        </ol>
+    </nav>
+    <div class="table-flex">
+        <div class="table-flex-item-left">
+        <div class="table-left-item">
+            <h4 class="description">
+                DIGITRONIC
+            </h4>
+            <p>
+                <b>DIGITRONIC</b> сегодня – это самое устанавливаемое оборудование,
+                что подтверждено экспертами газобаллонного рынка на международном форуме выставки GasSUF 2015!<br><br>
+                По итогам 2017 года, каждый час только в России оборудуются свыше 70 автомобилей блоками DIGITRONIC MAXI-2.<br><br>
+                А началось всё 6 марта 2004 года, в Москве на Ильменском проезде.
+                Основателями компании ГАЗПАРТ 95 и её инженерным составом был заложен фундамент и идеология торговой марки.<br><br>
+                30 апреля 2004 г. состоялась первая установка оборудования <b>DIGITRONIC</b>.<br><br>
+                В 2013 в ассортиментный портфель компании включена линейка <b>DIGITRONIC</b>, изготовленная на заводе AEB,
+                и в этом же году по программе «доступный метан» сформирован складской запас оборудования для природного газа «под ключ».<br><br>
+                7 июня 2016 года – нами получен сертификат соответствия требованиям ISO 9001-2011 (ISO 9001:2008, IDT)
+                «Системы менеджмента качества. Требования».<br><br>
+                Что же всё-таки позволило газовой системе <b>DIGITRONIC</b> достичь таких успехов и огромной популярности?<br><br>
+                — производство строго в Европе по техническому заданию инженеров <b>DIGITRONIC</b>.<br>
+                — отказ от политики «ограничений» в выборе комплектующих (например, только газовых реек в <b>DIGITRONIC</b> доступно свыше 30 видов).<br>
+                - доказала свою эффективность и позиция компании, что автомобиль на газе должен работать так же, как и на бензине, что отражено в слогане: «На газе, как на бензине».<br><br>
+                Всё это позволило столь быстро оборудованию <b>DIGITRONIC</b> завоевать лидирующие позиции в России и стать одной из самых узнаваемых марок в авто компонентах.
+            </p>
+        </div>
+        </div>
+        <div class="table-flex-item-right">
+            <h4 style="color: #2d5c88;margin-bottom: 15px">
+                    Записи в блоге
+            </h4>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/чистаяэкономия94x70.jpg" %}" alt="" style="float: left; margin-right: 10px">
+                <a href="#">Программа «Чистая Экономия»</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/HBOpayback.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Окупаемость ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/GBOdocuments.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Документы на ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/Газовая-установка-на-дизель-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Газовая установка на дизель</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/ГБО-пропан-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">ГБО метан</a>
+            </div>
+            <div class="recording">
+                <h5>Возникли вопросы? Спрашивайте!</h5>
+                <p style="font-size: 12px">Наши специалисты свяжутся с Вами и помогут.</p>
+                <form action="#" class="recording-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Ваше имя" class="d-block" style="margin-bottom: 10px">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="d-block">
+                    <button type="submit" class="btn btn-primary btn-lg" class="d-block">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

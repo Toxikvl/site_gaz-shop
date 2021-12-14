@@ -1,0 +1,94 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'markshbo' %}">Марки ГБО</a></li>
+            <li class="breadcrumb-item active">Zavoli</li>
+
+        </ol>
+    </nav>
+    <div class="table-flex">
+        <div class="table-flex-item-left">
+        <div class="table-left-item">
+            <h4 class="description">
+                Zavoli газоболонное оборудование
+            </h4>
+            <p>
+               Более 20 лет фирма Zavoli показывает безупречное качество, внедряя в качестве источника альтернативного
+                топлива оборудование, машине ездить на газу параллельно стандартному бензиновому питанию.
+                Комплекты Zavoli отличаются от конкурентов тем, что содержат в себе качественные и только
+                оригинальные узлы и детали произведенные компанией, вплоть до шлангов и хомутов.
+                Все это дает компании возможность гарантировать безопасность и безотказность работы системы на
+                протяжении всего гарантийного срока, который составляет более 150 тыс.км. пробега.<br><br>
+                <li>
+                    Конструктивная особенность Jet форсунок Zavoli это безштоковая технология с
+            пружинно-мембранным механизмом дозировки газа, что практически исключает наличие резиновых компонентов.
+                </li>
+            <img src="..\image\форсунка-Zavoli-296x300.jpg" width="200px" alt="">
+            Все это в совокупности обеспечивает эксплуатацию форсунок до 250 тыс.км.
+            Форсунка Zavoli является одной из самых точных и быстрых в мире газобаллонного оборудования.
+            Немаловажным плюсом данных форсунок является блочная технология соединения между собой,
+            что позволяет устанавливать их под любым углом и максимально близко к впускному коллектору двигателя,
+            а это обеспечивает абсолютно линейную характеристику производительности форсунок и как следствие
+            оптимальную работу двигателя.<br>
+            <li>
+                Сверхнадежный редуктор Zeta разработанный специально для тяжелых условий работы является продуктом
+                высочайшего итальянского качества, и обладает такими характеристиками, как стабильность подачи газа
+                на всех режимах работы двигателя и минимальный «колокол давления» в режиме CutOff.
+            </li>
+            <img src="..\image\редуктор-Zeta-300x225.jpg" width="200px" alt="">
+            В конструкции данного редуктора, теплообменник газа зарекомендовал себя, как лучший в мире газобаллонного оборудования.
+            Комплекты Zavoli поставляются с двумя типами редукторов; для мощных и маломощных двигателей.
+            Один редуктор Zavoli Super способен обеспечить газом двигатель до 400 л.с.<br>
+            <li>
+                Электронный блок управления это «мозги» газобаллонного оборудования,
+                которые воплотили в себе последние разработки компании Zavoli, а именно;
+                осуществляют точное и быстрое управление впрыском газа, своевременный и незаметный переход
+                с бензина на газ и обратно, коррекцию подачи газа по каналу OBD II (в режиме реального времени).
+                Все это стало возможным благодаря интеграции в ЭБУ Zavoli автомобильного 2-х ядерного процессора 6-го поколения.
+            </li>
+            <img src="..\image\электронный-блок-Zavoli-250x250.jpg" width="200px" alt="">
+            </p>
+        </div>
+        </div>
+        <div class="table-flex-item-right">
+            <h4 style="color: #2d5c88;margin-bottom: 15px">
+                    Записи в блоге
+            </h4>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="..\image\Marks\чистаяэкономия94x70.jpg" alt="" style="float: left; margin-right: 10px">
+                <a href="#">Программа «Чистая Экономия»</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="..\image\HBOpayback.png" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Окупаемость ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="..\image\GBOdocuments.png" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Документы на ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="..\image\Marks\Газовая-установка-на-дизель-94x70.jpg" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Газовая установка на дизель</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="..\image\Marks\ГБО-пропан-94x70.jpg" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">ГБО метан</a>
+            </div>
+            <div class="recording">
+                <h5>Возникли вопросы? Спрашивайте!</h5>
+                <p style="font-size: 12px">Наши специалисты свяжутся с Вами и помогут.</p>
+                <form action="#" class="recording-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Ваше имя" class="d-block" style="margin-bottom: 10px">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="d-block">
+                    <button type="submit" class="btn btn-primary btn-lg" class="d-block">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

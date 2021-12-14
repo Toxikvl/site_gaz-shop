@@ -1,0 +1,24 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Блог</li>
+        </ol>
+    </nav>
+ </div>
+ <div class="container" style="margin-top: 150px;min-height: 60vh">
+{% if blog_list %}
+{% for i in blog_list %}
+    <div class="table-right-item">
+    <img src="{% static "images/" %}{{ i.image }}" width="250px" alt=""><a href="/blog/{{ i.id }}" style="font-size: 20px">{{ i.title}}</a>
+    </div>
+{% endfor %}
+    {% else %}
+    <p>Статей нет</p>
+{% endif %}
+ </div>
+{
+{% endblock %}

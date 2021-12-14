@@ -1,0 +1,126 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'markshbo' %}">Марки ГБО</a></li>
+            <li class="breadcrumb-item active">BRC</li>
+
+        </ol>
+    </nav>
+    <div class="table-flex">
+        <div class="table-flex-item-left">
+        <div class="table-left-item">
+            <h4 class="description">
+                BRC газобалонное оборудование
+            </h4>
+            <p>
+                Лидер европейского и мирового производства газобаллонного оборудования
+                (ГБО) для автомобилей итальянская фирма BRC GasEquipment имеет почти 40 летний
+                опыт внедрения самых передовых технологий в это области, с использованием
+                американских достижений.
+                4 завода и большое количество дилерских центров в 60 странах мира.<br><br>
+                Сложность и новизна используемых технологий(особенно в производстве редукторов
+                и блоков управления) превращается на заводах BRC GasEquipment в абсолютную надежность,
+                простоту и качественную работу <b>газового оборудования brc.</b>
+                Позиции лидера крепнут ежегодно, это основано на ряде факторов:
+                <ul>
+                    <li>
+                        признание гбо brc ведущими автоконцернами (15 компаний) во всем мире и
+                        установка его на часть выпускаемых автомобилей непосредственно в автосборочных цехах;
+                    </li>
+                    <li>
+                        широкий спектр выпускаемого оборудования для различных типов двигателей,
+                        различной (от 50 кВт до 240 кВт) и различных способов подачи топлива;
+                    </li>
+                    <li>
+                        сертификация «Евро 5» и «Евро 6»;
+                    </li>
+                    <li>
+                        развитая сеть сервиса в России;
+                    </li>
+                    <li>
+                        привлекательные и надежные гарантийные услуги.
+                    </li>
+                </ul>
+            </p>
+            <h4 class="description">
+                BRC Sequent. Впрыск и газ совместимы
+            </h4>
+            <p>
+                <img src="{% static "images/auto_blitz_gpl.jpg" %}" width="300px" style="display: inline-block" alt="">
+                Только с 2007 года конструкторы BRC нашли надежное
+                техническое решение для идеальной работы ДВС на газовом топливе с системой впрыска.
+                Sequent Direct Injection (SDI) – это распределенный, или как его еще именуют,
+                многоточечный последовательный фазовый впрыск.
+                Смесь газа и воздуха поступает в коллектор,
+                а бензиново-воздушная смесь подается сразу в камеру сгорания.
+                В этом конструктивная особенность гбо 4 поколения.<br><br>
+                Зная модель двигателя автомобиля и его характеристики,
+                специалисты производят установку brc, наиболее подходящей модели.
+                Линейка гбо BRC Sequent насчитывает 7 моделей оборудования.
+                Практически любой автомобиль, даже сверхсовременный этого года выпуска,
+                может получить надежное итальянское «газовое сердце»,
+                которое принесет вам быстрый возврат потраченных средств
+                (стоимость газа почти в 3 раза меньше стоимости бензина!)
+                и дополнительные преимущества:
+                <ul>
+                    <li>
+                        «мягкая» работа двигателя;
+                    </li>
+                    <li>
+                        надежность и полная пожаробезопасность;
+                    </li>
+                    <li>
+                        простота переключения на газ;
+                    </li>
+                    <li>
+                        снижение CO в выхлопе;
+                    </li>
+                    <li>
+                        адаптация к отечественному газу.
+                    </li>
+                </ul>
+            </p>
+        </div>
+        </div>
+        <div class="table-flex-item-right">
+            <h4 style="color: #2d5c88;margin-bottom: 15px">
+                    Записи в блоге
+            </h4>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/чистаяэкономия94x70.jpg" %}" alt="" style="float: left; margin-right: 10px">
+                <a href="#">Программа «Чистая Экономия»</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/HBOpayback.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Окупаемость ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/GBOdocuments.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Документы на ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/Газовая-установка-на-дизель-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">Газовая установка на дизель</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/ГБО-пропан-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="#">ГБО метан</a>
+            </div>
+            <div class="recording">
+                <h5>Возникли вопросы? Спрашивайте!</h5>
+                <p style="font-size: 12px">Наши специалисты свяжутся с Вами и помогут.</p>
+                <form action="#" class="recording-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Ваше имя" class="d-block" style="margin-bottom: 10px">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="d-block">
+                    <button type="submit" class="btn btn-primary btn-lg" class="d-block">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

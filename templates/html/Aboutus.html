@@ -1,0 +1,78 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+        <div class="container">
+        <nav class="main-navigation">
+            <a class="main-navigation-logo" href="{% url 'main' %}"><img src="{% static "images/Mainlogo.png" %}" alt="main-logo"></a>
+            <ul>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'main' %}">Главная</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="#">Магазин</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'markshbo' %}">Марки ГБО</a>
+                </li >
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'togbo' %}">ТО ГБО</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'warranty' %}">Гарантии</a>
+                </li>
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'blog' %}">Вопросы о ГБО</a>
+                </li>
+                <li class="main-navigation-list main-navigation-list-a" style="color:#557a8a ">
+                   О нас
+                </li >
+                <li class="main-navigation-list">
+                    <a class="main-navigation-list-a" href="{% url 'contacts' %}">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item active" aria-current="page">О нас</li>
+        </ol>
+    </nav>
+    <div class="clearfix">
+        <p style="width: 700px; float: left">
+            Компания «Центр Газа» занимается переоборудованием автомобилей на альтернативные источники топлива в России с самым высоким качеством обслуживания.
+            Бескомпромиссное качество работ, контроль за качества, грамотные консультации — девиз «Центр Газа».<br><br>
+            Каждый гражданин нашей республики достоин качественного сервиса. Чтобы достичь качества, мы используем новые технологии и инновационные продукты. У нас не бывает мелочей!
+        </p>
+        <img src="{% static "images/DownloadGBO.png" %}" width="400px" alt="" style="float: right">
+    </div>
+    <p> Обученные квалифицированные специалисты, имеющие за плечами опыт установок в несколько тысяч автомобилей,
+        позволяют нам гарантировать нашим клиентам неизменный превосходный результат. Мы гарантируем, что вы не почувствуете разницу между видами топлива.
+        Специалисты «Центра Газ» учитывают особенности автомобиля при выборе и рекомендации газового оборудования.
+        Уделяя внимание мелочам при установке, мы добиваемся без проблемной эксплуатации оборудования нашими клиентами.
+        Шланги (конечно только специальные газовые), хомуты (естественно, это либо фирменные самозажимающиеся, либо из нержавеющей стали),
+        проводка (негорючая гофрированная трубка), изолента (профессиональная, автомобильная «Terminator»),
+        сканеры OBD, мотор-тестеры – позволяют  «Центр Газу» оправдывать свое имя.<br><br>
+        Бескомпромиссное качество за разумные деньги, вот что является отличительной чертой нашей Компании. Мы работаем  как с физическими, так и юридическими лица.
+        Широкий спектр газобаллонного оборудования от начального до премиум уровня, позволяет удовлетворять владельцев разных автомобилей.
+        От ВАЗ Шанс до Porsche! Независимо от марки автомобиля, качество установки остается неизменным!
+    </p>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-20-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-23-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-24-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-26-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-27-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-30-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-31-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-34-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-35-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-36-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-38-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <img border="0" src="{% static "images/photo_2018-05-25_16-28-41-1280x720.jpg" %}" class="foc" tabindex="1"/>
+    <h4 class="description">Сертификаты компании</h4>
+    <img border="0" src="{% static "images/Сертификат-соответствия-768x1065.jpg" %}" class="foc" tabindex="1" style="margin-bottom: 40px"/>
+    <img border="0" src="{% static "images/приложение-к-сертификату-соответствия-768x1065.jpg" %}" class="foc" tabindex="1" style="margin-bottom: 40px"/>
+</div>
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends "html/Main.html" %}
+{% load static %}
+{% block contentblock %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main' %}">Авто Газ Комплект</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Марки ГБО</li>
+        </ol>
+    </nav>
+    <div class="table-flex">
+        <div class="table-flex-item-left">
+            <div class="table-left-item" style="display: inline-flex; margin-bottom: 10px">
+                <div>
+                <img src="{% static "images/BRC-370x140.jpg" %}" alt="BRC">
+                </div>
+                <div>
+                <h5 style="color: #557a8a ">BRC газобалонное оборудование<br></h5>
+                <p style="font-size: 12px">
+                Лидер европейского и мирового производства газобаллонного оборудования (ГБО) для автомобилей итальянская фирма BRC GasEquipment имеет почти 40
+                летний опыт внедрения самых передовых технологий в это области.
+                </p>
+                <a href="{% url 'brc' %}">Подробнее</a>
+                </div>
+            </div>
+            <div class="table-left-item" style="display: inline-flex; margin-bottom: 10px">
+                <div>
+                <img src="{% static "images/dogotronic-370x140.jpg" %}" alt="dogotronic">
+                </div>
+                <div>
+                <h5 style="color: #557a8a ">Digitronic<br></h5>
+                <p style="font-size: 12px">
+                DIGITRONIC сегодня – это самое устанавливаемое оборудование, что подтверждено экспертами газобаллонного рынка на международном форуме выставки GasSUF 2015!
+По итогам 2017 года, каждый час только в России оборудуются свыше 70 автомобилей блоками DIGITRONIC MAXI-2.
+                </p>
+                <a href="{% url 'digitronic' %}">Подробнее</a>
+                    </div>
+            </div>
+            <div class="table-left-item" style="display: inline-flex; margin-bottom: 10px">
+                <div>
+                <img src="{% static "images/logo-atiker.com_-370x140.jpg" %}" alt="Atiker">
+                </div>
+                <div>
+                <h5 style="color: #557a8a ">Atiker газоболонное оборудование<br></h5>
+                <p style="font-size: 12px">
+                Atiker Metal Inc. производит автомобильные LPG балоны и системы LPG/CNG топлива.
+Используя передовые технологии, на протяжении многих лет, компания уверенно занимает лидирующие позиции в своем профессиональном секторе.
+                </p>
+                <a href="{% url 'atiker' %}">Подробнее</a>
+                </div>
+            </div>
+            <div class="table-left-item" style="display: inline-flex; margin-bottom: 10px">
+                <div>
+                <img src="{% static "images/lovato-370x140.jpg" %}" alt="Lovato">
+                    </div>
+                 <div>
+                <h5 style="color: #557a8a ">Lovato газоболонное оборудование<br></h5>
+                <p style="font-size: 12px">
+                Lovato — первое итальянское ГБО, массово появившееся более 20 лет назад на Российском рынке. За эти годы компания Lovato прекрасно адаптировала автомобильное газовое оборудование к суровым Российским условиям.
+                </p>
+                <a href="{% url 'lovato' %}" >Подробнее</a>
+                </div>
+            </div>
+            <div class="table-left-item" style="display: inline-flex; margin-bottom: 10px">
+                 <div>
+                <img src="{% static "images/omvl-370x140.png" %}" alt="OMVL">
+                 </div>
+                 <div>
+                <h5 style="color: #557a8a ">OMVL<br></h5>
+                <p style="font-size: 12px">
+                    Качественное газобаллонное оборудование на авто – это не только залог минимизации транспортных расходов, но и надежность, долговечность топливной системы, увеличение ресурса двигателя, межсервисного интервала замены свечей зажигания и фильтров, снижение износа узлов мотора.
+                </p>
+                <a href="{% url 'omvl' %}" >Подробнее</a>
+                 </div>
+            </div>
+        </div>
+        <div class="table-flex-item-right">
+            <h4 style="color: #2d5c88;margin-bottom: 15px">
+                    Записи в блоге
+            </h4>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/чистаяэкономия94x70.jpg" %}" alt="" style="float: left; margin-right: 10px">
+                <a href="/blog/1">Программа «Чистая Экономия»</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/HBOpayback.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="/blog/2">Окупаемость ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/GBOdocuments.png" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="/blog/3">Документы на ГБО</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/Газовая-установка-на-дизель-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="/blog/4">Газовая установка на дизель</a>
+            </div>
+            <div class="table-right-item" style="margin-bottom: 10px" >
+                <img src="{% static "images/ГБО-пропан-94x70.jpg" %}" alt="" width="94px"height="70px" style="float: left; margin-right: 10px">
+                <a href="/blog/5">ГБО метан</a>
+            </div>
+            <div class="recording">
+                <h5>Возникли вопросы? Спрашивайте!</h5>
+                <p style="font-size: 12px">Наши специалисты свяжутся с Вами и помогут.</p>
+                <form action="#" class="recording-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Ваше имя" class="d-block" style="margin-bottom: 10px">
+                    <input type="tel" name="phone" value="" placeholder="Телефон" class="d-block">
+                    <button type="submit" class="btn btn-primary btn-lg" class="d-block">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
